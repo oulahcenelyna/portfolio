@@ -1,0 +1,322 @@
+/* CSS PAGE D'ACCUEIL*/
+body {
+  background-color: white;
+}
+/* image logo */
+ .logo {
+float:left;
+}
+/*baniere avec grand titre*/
+.rectangle {
+  background-color:#0E1843; /*1d3557*/
+  width: 2500px;
+  height: 300px;
+}
+/*centrer la baniere sur la page*/
+.center {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* grand titre */
+h1 {
+  text-align: center;
+  padding-top: 120px;
+  color: white;
+  font-family:"Times New Roman", Times, serif;
+  font-size: 65px;
+}
+/* BARRE DE MENU*/
+.menu menu {
+list-style-type: none;
+ margin: 16px;
+ margin-top: 10px;
+ padding: 0;
+ overflow: hidden;
+ background-color:#0E1843;
+}
+.menu menu ol {
+list-style-type: none;
+ margin: 16px;
+ margin-top: 10px;
+ padding: 0;
+ overflow: hidden;
+ background-color:#0E1843;
+}
+.menu li {
+  float:right;
+  border-right: 2px solid white; /* trait separant les parties du menu*/
+}
+/* texte dans la barre de menu*/
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*changement de couleur quand on clique pour barre de menu*/
+.menu li a:hover {
+  background-color: #1282a2;   /*#b8b8ff; lavande */    /*#2ec4b6; turquoise*/
+}
+
+/* lot 1,..,5 dans la barre de menu */
+.menu .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  padding: 12px 16px;
+
+}
+/*tous les lots apparaissent dans menu que si on clique sur LOT */
+.menu .dropdown:hover .dropdown-content {
+  display: block ;
+  right:0;
+}
+
+/* cadre de presentation du site*/
+fieldset {
+  border-style:solid;
+  border-color: #c1d3fe;
+  border-width: thick;
+  background-color: white;
+}
+/* positionner le petit cadre au milieu */
+.below-rectangle {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+pre {
+  font-family:"Times New Roman", Times, serif;
+  text-indent: 30px;
+}
+ /* carte des lots*/
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 33%;
+  margin-bottom: 1px;
+  padding: 0 9px;
+}
+/* changement carte en fonction de la taille de  l'ecran */
+@media screen and (max-width: 650px) {  /* BUG: alignement des cartes apres 650px ( certaines ( lot4 opt 1 et opt 2) se retouvent plus bas que d'autres) */
+  .column {
+    margin-top: 250px;
+    width: 100%;
+    display: block;
+  }
+}
+ /* ombre pour chaque carte ( lot 1, 2 ...,5)*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 77, 0.6);
+}
+
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* grand titre des cartes*/
+h2
+{
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color:#1282a2;      /*#2ec4b6;*/
+  font-size: 30px;
+}
+/* sous titre des cartes*/
+.title {
+  color: black   /* #a5be00 vert */ ;
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* mettre les titres en majuscules*/
+.uppercase{
+  text-transform:uppercase;
+}
+/* bouton pour voir le lot entier */
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #ffb703;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #d81159;
+}
+.row{
+  margin-top: 43%;
+}
+/* texte dans le bouton des cartes*/
+a{
+  color: white;
+  text-decoration: none;
+}
+/* rubrique garantie   */
+.garantie-postes h2{ /* titre  */
+  color:white;
+  background-color:#0E1843;
+  margin-top: 50px;
+}
+.garantie-postes fieldset{ /*encadrement*/
+  border-style: solid;
+  border-color:#c1d3fe;
+}
+.garantie-postes p{ /* texte dans encadrement sur garantie*/
+  text-align: center;
+  font-family:"Times New Roman", Times, serif;
+  font-size: 20px;
+}
+/* div digi-crew  ( carré presentation entreprise)*/
+.about-us h2{/* titre  */
+  color:white;
+  background-color:#0E1843;
+  margin-top: 50px;
+}
+.about-us{
+  text-align: center;
+}
+.about-us fieldset{
+  border-color: #c1d3fe;
+  border-style:solid;
+  border-width: thick;
+  background-color: white;
+  font-family:"Times New Roman", Times, serif;
+  font-size: 20px;
+}
+/* carré avec map localisation digi-crew */
+iframe {
+    border: 5px solid #c1d3fe;
+    width: 450px;
+    height: 350px;
+    margin-top:20px;
+    padding: 12px 16px;
+}
+/* titre services proposés*/
+ h3{
+   text-align: center;
+   text-decoration: overline;
+   font-weight: bold;
+   color:#0E1843;      /*#2ec4b6;*/
+   font-size: 30px;
+}
+.about-us ul{
+  text-align: left;
+  color: white;
+  list-style-type: square;
+  background-color: #c9457a; /* #d81159*/ /* IDEA: #1282a2 #ffcc80 */
+  display: inline-block;
+  padding: 30PX;
+  padding-left: 50px;
+  margin: 45px;
+  font-family:"Times New Roman", Times, serif;
+  font-size: 20px;
+}
+/* formulaire  pour contact */
+/* div contact */
+.contact h2{
+  color:white;
+  background-color:#0E1843;
+  margin-top: 50px;
+}
+/* div formulaire */
+.formulaire{
+  font-weight: bold;
+  font-size: 19px;
+  color: #0E1843;
+  border-radius: 5px;
+  background-color: #c1d3fe;
+  padding: 20px;
+}
+/* texte entré par l'utilisateur*/
+input[type=text],[type=tel],[type=mail] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* selection d'un motif de contact*/
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border-style: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* bouton envoyer*/
+input[type=submit] {
+  width: 100%;
+  background-color:#0E1843;
+  color: white;
+  padding: 14px 20px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+}
+/* changement de couleur bouton*/
+input[type=submit]:hover {
+  background-color: 	#f5f4eb;
+  color: black;
+
+}
+/*  fleche pour revenir au haut de la page */
+.fleche p{
+text-align: right;
+}
+.fleche img{
+ width: 7%;
+}
+/* bas de page */
+footer{
+  background-color:#0E1843;
+  color: white;
+}
+footer table{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+footer table tr,td{
+  text-align: left;
+}
+footer th{
+  text-align: left;
+}
+footer  ul,li{
+  list-style-type: none;
+}
+footer a {
+  text-decoration: underline;
+}
+footer p{
+  text-align: center;
+}

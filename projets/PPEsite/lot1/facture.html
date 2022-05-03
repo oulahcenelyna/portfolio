@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="facture.css">
+    <title>Facture</title>
+    <h3>Facture n°2345</h3>
+  </head>
+  <body>
+    <!-- image digi-crew  -->
+    <div class="logo">
+      <img src="../digi-crew.png" alt="DigiCrew" height="145" width="350">
+    </div>
+    <!-- destinataire facture -->
+    <div class="client">
+      <dl>
+        <dt>Facturé à</dt>
+        <dd>OID<address class="adresse">70 Avenue de l'Europe <br>  07100 Annonay</address></dd>
+      </dl>
+      <dl>
+        <dt>Envoyé à</dt>
+        <dd>OID<address class="adresse"> 70 Avenue de l'Europe <br>07100 Annonay</address></dd>
+      </dl>
+    </div>
+    <!--  PRIX SI  OPTION 1 LOT 4  -->
+    <h4>Si option 1 du lot 4 selectionée :</h4>
+    <!-- tableau n°1 avec option 1 mac lot 4 -->
+    <table>
+      <caption><em>Facture datée du 22/02/2021</em></caption>  <!-- date en italique sous tableau -->
+      <thead> <!-- entete du tableau -->
+        <tr>
+          <th>Lots</th>
+          <th>Prix postes HT</th>
+          <th>Prix prestations HT</th>
+          <th>MONTANT</th>
+        </tr>
+      </thead>
+      <tbody> <!-- corps du tableau -->
+        <tr>
+          <td>Lot 1 : 220 ordinateurs fixes</td>
+          <td>197 038€<sub>60</sub></td>
+          <td>15 840€</td>
+          <td>212 878€<sub>60</sub> </td>
+        </tr>
+        <tr>
+          <td>Lot 2 : 210 ordinateurs portables</td>
+          <td>359 562€</td>
+          <td>15 120€</td>
+          <td>374 682€</td>
+        </tr>
+        <tr>
+          <td>Lot 3 : 50 ultrabook</td>
+          <td>47 390€<sub>50</sub></td>
+          <td>3600€</td>
+          <td>50 990€<sub>50</sub></td>
+        </tr>
+        <tr>
+          <th scope="col">Lot 4 OPTION 1 : 4 ordinateurs métier MAC</th>
+          <th scope="col">40 802€<sub>64</sub></th>
+          <th scope="col">360€</td>
+          <th scope="col">41 162€<sub>64</sub></th>
+        </tr>
+      </tbody>
+      <tfoot> <!-- bas du tableau -->
+        <tr>
+          <th colspan="3"><small>TOTAL HT</small></th>
+          <th><strong>679 713€<sup>74</sup> HT</strong></th>
+        </tr>
+        <tr>
+          <th colspan="3"> <small>TVA 20%</small></th>
+          <th>135 942€<sup>63</sup> </th>
+        </tr>
+        <tr>
+          <th colspan="3" bgcolor="#219ebc"> <big>TOTAL TTC</big></th>
+          <th bgcolor="#219ebc"><big>815 656€<sup>37</sup></big></th>
+        </tr>
+      </tfoot>
+    </table>
+    <br>
+    <!--  PRIX SI  OPTION 1 LOT 4  -->
+    <h4>Si option 2 du lot 4 selectionée :</h4>
+    <!-- tableau n°é avec option 2 windows lot 4 -->
+    <table>
+      <caption> <em>Facture datée du 22/02/2021</em></caption><!-- date en italique sous tableau -->
+      <thead><!-- entete du tableau -->
+        <tr>
+          <th>Lots</th>
+          <th>Prix postes HT</th>
+          <th>Prix prestations HT</th>
+          <th>MONTANT</th>
+        </tr>
+      </thead>
+      <tbody><!-- corps du tableau -->
+        <tr>
+          <td>Lot 1 : 220 ordinateurs fixes</td>
+          <td>197 038€<sub>60</sub></td>
+          <td>15 840€</td>
+          <td>212 878€<sub>60</sub> </td>
+        </tr>
+        <tr>
+          <td>Lot 2 : 210 ordinateurs portables</td>
+          <td>359 562€</td>
+          <td>15 120€</td>
+          <td>374 682€</td>
+        </tr>
+        <tr>
+          <td>Lot 3 : 50 ultrabook</td>
+          <td>47 390€<sub>50</sub></td>
+          <td>3600€</td>
+          <td>50 990€<sub>50</sub></td>
+        </tr>
+        <tr>
+          <th scope="col">Lot 4 option 2 : 4 ordinateurs métier Windows</th>
+          <th scope="col">15 838€</th>
+          <th scope="col">576 €</th>
+          <th scope="col">16 414€</th>
+        </tr>
+      </tbody>
+      <tfoot><!-- bas du tableau -->
+        <tr>
+          <th colspan="3"><small>TOTAL HT</small></th>
+          <th>654 965€<sup>10</sup> HT</th>
+        </tr>
+        <tr>
+          <th colspan="3"> <small>TVA 20%</small></th>
+          <th>130 993€<sup>02</sup> </th>
+        </tr>
+        <tr>
+          <th colspan="3" bgcolor="#219ebc " > <big>TOTAL TTC</big></th>
+          <th bgcolor="#219ebc"> <big>785 958€<sup>12</sup></big></th>
+        </tr>
+      </tfoot>
+    </table>
+    <!--  modalité de paiement  -->
+    <dl class="paiement">
+      <dt><i>Modalités de paiement</i></dt>
+      <dd><i>le paiement est dû  30 jours suivant la réception des marchandises ou l'exécution des prestations</i> </dd>
+    </dl>
+    <!--  icone pour revenir a la page d'accueil -->
+    <figure>
+      <a href="../ppe.html"><img src="../home2.png" alt=""  width=50px height=50px></a>
+      <figcaption>Accueil</figcaption>
+    </figure>
+    <!-- coordonnées bancaire et site web  -->
+    <footer>
+      <p><b>www.digi-crew.com</b></p>
+      <p> <b>IBAN 342342536457 345 / BIC AFPR 4534</b>  </p>
+    </footer>
+  </body>
+</html>

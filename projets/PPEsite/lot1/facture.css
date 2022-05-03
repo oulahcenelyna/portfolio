@@ -1,0 +1,92 @@
+/*   CSS PAGE  FACTURE  */
+/* grand titre de la page*/
+h3{
+  font-size: 50px;
+  font-family:"Times New Roman", Times, serif;
+  color:#090c59/*#191970  IDEA:#4B0082 */;
+  text-align: left;
+  /*background-color: #dfe8fc#E6E6FA */
+}
+/* Photo digi-crew*/
+.logo {
+float:right;
+}
+/* destinataire de la facture */
+.client dl{
+  display: inline-block;
+}
+.client dt{
+  font-size:25px;
+  color:#023047;
+}
+/* adressse client */
+.adresse{
+  font-family:"Times New Roman", Times, serif;
+font-style: normal;
+}
+/* sous titre opt 1 et 2 lot 4*/
+h4{
+  font-size: 30px;
+  font-family:"Times New Roman", Times, serif;
+  color:#090c59;
+  text-align: center;
+}
+/* tableau detaillé avec prix total*/
+table{
+   width:90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+table , th , td , tr {
+  border-style: solid ;
+  border-collapse: collapse;
+  padding: 13px;
+  text-align: center;
+}
+/* 1 ere ligne du tableau*/
+thead{
+  background-color: #8ecae6;
+}
+/* corps du tableau */
+tbody{
+  background-color: white;
+}
+/* 3 dernires lignes avec totaux ( HT ; TVA ; TTC)*/
+tfoot{
+  background-color: white;
+}
+/*  ligne LOT 4 tableau */
+[scope="col"]{
+  background-color: #ffb703/* IDEA: #DB7093  */  ;
+}
+/* DATE FACTURE*/
+caption {
+    padding: 8px;
+    caption-side: bottom;
+}
+/*modalité paiement*/
+.paiement dt{
+  font-size:20px;
+  color:black;
+  font-weight: bold;
+}
+/* icone pour revenir accueil*/
+img{
+  float: right;
+}
+figure {
+    border: thick #8ecae6 dotted;
+    float: right;
+    padding: 5px;
+}
+figcaption {
+    color: #fb8500;
+    font-weight: bold;
+    font-family:"Times New Roman", Times, serif;
+    padding: 3px;
+    text-align: center;
+}
+/* bas de page */
+footer{
+  text-align: center;
+}
