@@ -3,6 +3,9 @@ margin: 0;
 
 font-family: 'Nunito', sans-serif;
 }
+p{
+    font-size: 20px !important;
+}
 h1{
     font-size: 70px;
     font-weight: 100;
@@ -66,7 +69,7 @@ h2{
 }
 h3{
     color: blue;
-    font-size: 27px;
+    font-size: 29px;
     font-weight: 100;
     font-family: 'DM Serif Display', serif;
     text-align: left;
