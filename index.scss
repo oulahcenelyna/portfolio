@@ -395,7 +395,7 @@ cadres language style
 
   border-radius: 5px;
  
-  width: 20%;
+  width: 23%;
   padding: 1%;
   margin: 1%;
   padding-bottom: 4%;
@@ -501,4 +501,256 @@ padding: 1%;
   display: flex;
   padding: 1%;
   border-bottom-right-radius: 50px;
+}
+/* certification */
+.cerifications{
+  display: flex;
+  margin: auto;
+width: 50%;
+padding-left: 10px;
+padding-right: 10px;
+}
+.visualisationCertif button{
+  border-radius: 15px 50px;
+  background-color: #2ecc71;
+  padding: 30px;
+  border: none;
+  cursor: pointer;
+  transition: .6s;
+}
+.visualisationCertif button:hover{
+  
+transform: scale(1.05);
+  box-shadow: 0px 2px 9px grey;
+}
+
+h6{
+  font-size: 22px ; 
+  font-family: 'DM Serif Display', serif;
+  font-weight: 100;
+}
+.visualisationCertif{
+ 
+  margin: 8%;
+}
+
+/*-------------
+veille info
+---------------*/
+.shadow{
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px grey;
+}
+.veille-cadre{
+  border-radius: 50px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 30px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px 10px 15px 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+
+  padding: 16px;
+  text-align: center;
+
+}
+.card h3{
+  font-size: 45px;
+  font-weight: bold;
+
+}
+.card p{
+  font-size: 16px;
+
+}
+.card button{
+  background-color:#D5F2FF;
+  border:none;
+  border-radius: 10px;
+  font-size: 15px;
+  color:rgba(5, 5, 5, 0.7);
+  padding: 13px 25px;
+  text-decoration: none;
+  font-style: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: .4s;
+}
+.card button:hover{
+transform: scale(1.05);
+}
+/*-----------------
+bts sio css
+--------------------------*/
+* {
+  box-sizing: border-box;
+}
+.centre{
+  text-align: center;
+    font-size: 16px;
+    padding: 40px;
+    background-color: #f8f8f8;
+    width: 100%;
+}
+.centre button{
+
+      background-color:rgba(3, 15, 155, 0.5);
+      border:none;
+      border-radius: 10px;
+      font-size: 15px;
+      color:white;
+      padding: 13px 25px;
+      text-decoration: none;
+      font-style: bold;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-size: 16px;
+  width: 60%;
+  transition: .4s;
+}
+.centre button:hover{
+transform: scale(1.05);
+}
+/* Create two equal columns that floats next to each other */
+.case {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  height: 420px; /* Should be removed. Only for demonstration */
+
+}
+.svg {
+  float: left;
+  width: 50%;
+  padding: 0;
+  height: 410px; /* Should be removed. Only for demonstration */
+}
+.svg img{
+  width: 390px;
+  height:390px;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 10px;
+
+}
+
+
+/* Clear floats after the columns */
+.rang:after {
+  content: "";
+  display: table;
+}
+.case p,a{
+  font-size: 20px;
+
+}
+.case img{
+  padding: 20px;
+  padding-top: 60px;
+}
+.case button{
+
+    background-color:rgba(3, 15, 155, 0.5);
+    border:none;
+    border-radius: 10px;
+    font-size: 15px;
+    color:white;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-style: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 16px;
+width: 90%;
+transition: .4s;
+
+
+}
+.case button:hover{
+   transform: scale(1.05);
+}
+
+.ressources{
+
+  padding: 50px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.flex-container > div {
+
+  width: 33%;
+  margin: 10px;
+  text-align: center;
+  font-size: 15px;
+  background-color:white;
+
+}
+
+.ressources img{
+
+  padding: 10px;
+}
+footer{
+
+  background-color: blue;
+  margin: 0;
+  padding: 1%;
+  color: white;
+  border-top-left-radius: 500px 500px;
+}
+.footer {
+
+  display: flex;
+
+  margin: auto;
+width: 60%;
+
+padding: 5px;
+}
+.mail{
+
+  margin-left: 10%;
+}
+.linkedin{
+
+  margin-left: 10%;
 }
